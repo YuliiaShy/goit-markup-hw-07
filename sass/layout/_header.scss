@@ -1,0 +1,114 @@
+.page-header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.page-header__container {
+  display: flex;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color-blue);
+}
+
+.page-header__logo {
+  color: var(--logo-span-color);
+}
+
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link  {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--headline-text-color);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.site-nav__link_current {
+  color: var(--accent-color-blue);
+  position: relative;
+
+  &::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+
+  border-radius: 2px;
+  background-color: var(--accent-color-blue);
+}
+}
+
+.site-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-contacts__item{
+  display: flex;
+}
+
+.site-contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-contacts__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: inherit;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-contacts__link:hover,
+.site-contacts__link:focus {
+  color: var(--accent-color-blue);
+}
+
+.site-contacts__icon {
+  display: block;
+  margin-right: 10px;
+  align-content: center;
+  fill: currentColor;
+}
