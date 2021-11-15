@@ -22,18 +22,21 @@
   </head>
   <body>
     <!-- header -->
-        <header class="page-header">
-      <div class="container page-header__container">
+    <header class="page-header">
+      <div class="page-header__container container">
         <nav class="page-header__nav">
-          <a class="logo" href="./index.html"
-            >Web<span class="page-header__logo">Studio</span></a
+          <a class="logo page-header__logo" href="./index.html"
+            >Web<span class="page-header__logo_black">Studio</span></a
           >
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
+              <a
+                class="site-nav__link"
+                href="./index.html"
+                >Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link  site-nav__link_current" href="./portfolio.html">Портфолио</a>
+              <a class="site-nav__link site-nav__link_current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
@@ -67,32 +70,26 @@
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="buttons-list">
             <li class="btn-item">
-              <button class="btn-filter link-none button-active" type="button">
+              <button class="btn-filter button-active" type="button">
                 Все
               </button>
             </li>
             <li class="btn-item">
-              <button class="btn-filter link-none" type="button">
-                Веб-сайты
-              </button>
+              <button class="btn-filter" type="button">Веб-сайты</button>
             </li>
             <li class="btn-item">
-              <button class="btn-filter link-none" type="button">
-                Приложения
-              </button>
+              <button class="btn-filter" type="button">Приложения</button>
             </li>
             <li class="btn-item">
-              <button class="btn-filter link-none" type="button">Дизайн</button>
+              <button class="btn-filter" type="button">Дизайн</button>
             </li>
             <li class="btn-item">
-              <button class="btn-filter link-none" type="button">
-                Маркетинг
-              </button>
+              <button class="btn-filter" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="examples-list">
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -113,7 +110,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -136,7 +133,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -159,7 +156,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -182,7 +179,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -205,7 +202,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -228,7 +225,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -251,7 +248,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -274,7 +271,7 @@
               </a>
             </li>
             <li class="examples-item">
-              <a class="examples-link link-none" href="">
+              <a class="examples-link" href="">
                 <div class="examples-overlay">
                   <img
                     class="examples-img"
@@ -299,64 +296,62 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="section page-footer">
-      <div class="container footer-flex">
-        <div class="address-box">
-          <a class="logo-address link-none" href="./index.html"
-            >Web<span class="logo-footer">Studio</span></a
+    <footer class="page-footer section">
+      <div class="page-footer__container container">
+        <div class="contacts">
+          <a class="logo page-footer__logo" href="./index.html"
+            >Web<span class="page-footer__logo_white">Studio</span></a
           >
-          <address class="addresses">
-            <ul class="address-list">
-              <li class="address-item">
+          <address>
+            <ul class="contacts__list">
+              <li class="contacts__item">
                 <a
-                  class="map-address link-none"
+                  class="contacts__map"
                   href="https://goo.gl/maps/XkNCHodQhnQYmGNX7"
                   target="_blank"
                   rel="noreferrer noopener"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="address-item">
-                <a
-                  class="contact-mail link-none"
-                  href="mailto:info@devstudio.com"
+              <li class="contacts__item">
+                <a class="contacts__mail" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-item">
-                <a class="contact-tel link-none" href="tel:+380961111111"
+              <li class="contacts__item">
+                <a class="contacts__tel" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="join-box">
-          <p class="join-title">Присоединяйтесь</p>
-          <ul class="join-list">
-            <li class="join-item">
-              <a href="" class="join-link">
+        <div class="join">
+          <p class="join__title">Присоединяйтесь</p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link_join">
                 <svg class="join-icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-link">
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link_join">
                 <svg class="join-icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-link">
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link_join">
                 <svg class="join-icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-link">
+            <li class="social-list__item">
+              <a href="" class="social-list__link social-list__link_join">
                 <svg class="join-icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-linkedin"></use>
                 </svg>
@@ -364,21 +359,27 @@
             </li>
           </ul>
         </div>
-          <div class="subscribe-box">
-        <form action="#" class="form-subscribe">
-          <p class="subscribe-title">Подпишитесь на рассылку</p>
-          <div class="subscribe-wrap"> 
-          <label class="field-subscribe">
-              <input type="email" class="input-subscribe" name="user-mail" placeholder="E-mail"/>         
-          </label> 
-          <button class="btn-subscribe" type="submit">Подписаться
-            <svg class="subscribe-icon" width="24" height="24">
+        <div class="subscribe">
+          <form action="#" class="subscribe__form">
+            <p class="subscribe__title">Подпишитесь на рассылку</p>
+            <div class="subscribe__wrap">
+              <label class="subscribe__field">
+                <input
+                  type="email"
+                  class="subscribe__input"
+                  name="user-mail"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="subscribe__button" type="submit">
+                Подписаться
+                <svg class="subscribe__icon" width="24" height="24">
                   <use href="./images/icons.svg.svg#icon-send"></use>
                 </svg>
-          </button>
-          </div>
-        </form>
-      </div>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

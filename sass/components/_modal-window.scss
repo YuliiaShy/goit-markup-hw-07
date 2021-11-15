@@ -8,8 +8,8 @@
   transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   background-color: var(--hero-headline-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px var(--box-shadow-component), 0px 1px 1px var(--box-shadow-components),
+    0px 2px 1px var(--backdrop-rgba);
   transition: transform 300ms linear, opacity 300ms linear;
 }
 
@@ -18,7 +18,7 @@
   opacity: 0;
 }
 
-.btn-modal-close {
+.modal__btn_close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -30,7 +30,7 @@
   justify-content: center;
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--btn-modal-close-border);
   background-color: var(--hero-headline-color);
   color: var(--logo-span-color);
   transition-property: color;
@@ -43,6 +43,6 @@
 }
 }
 
-.modal-icon-close {
+.modal__icon_close {
   fill: currentColor;
 }

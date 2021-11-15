@@ -11,23 +11,6 @@
   align-items: center;
 }
 
-.logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--accent-color-blue);
-}
-
-.page-header__logo {
-  color: var(--logo-span-color);
-}
-
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -49,6 +32,11 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+  color: var(--accent-color-blue);
+}
 }
 
 .site-nav__link_current {
@@ -97,13 +85,11 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus,
-.site-contacts__link:hover,
-.site-contacts__link:focus {
+  &:hover,
+  &:focus {
   color: var(--accent-color-blue);
+}
 }
 
 .site-contacts__icon {

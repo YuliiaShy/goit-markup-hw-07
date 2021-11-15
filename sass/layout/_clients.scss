@@ -1,23 +1,23 @@
-.clients-flex {
+.clients__container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -35,6 +35,6 @@
 }  
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
